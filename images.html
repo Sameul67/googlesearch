@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search Google Images with a gaming-themed interface.">
+  <title>Game Image Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="search-page">
+  <header class="topbar">
+    <nav class="top-links" aria-label="Main navigation">
+      <a href="index.html">Game Search</a>
+      <a href="advanced.html">Advanced Search</a>
+      <a href="formulare.html">Player loadout</a>
+    </nav>
+  </header>
+
+  <main class="search-main">
+    <a class="wordmark" href="index.html" aria-label="Google Search home">
+      <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+    </a>
+    <p class="wordmark-caption image-caption">Game images</p>
+    <form class="search-form" action="https://www.google.com/search" method="get">
+      <label class="visually-hidden" for="image-query">Search Google Images for games</label>
+      <input type="hidden" name="tbm" value="isch">
+      <input class="search-input" id="image-query" type="search" name="q" title="Search images" autocomplete="off">
+      <div class="search-actions">
+        <button class="button" type="submit">Search game images</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://validator.w3.org/nu/" data-validator="html">Validate HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/" data-validator="css">Validate CSS</a>
+      <a href="citace.md" data-citations>Citations and sources</a>
+      <a href="https://example.com/" data-portfolio>My portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>

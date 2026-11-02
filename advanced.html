@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find game-related Google results using specific words and phrases.">
+  <title>Advanced Game Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="advanced-page">
+  <header class="topbar advanced-topbar">
+    <a class="small-wordmark" href="index.html" aria-label="Google Search home">Google</a>
+    <nav class="top-links" aria-label="Main navigation">
+      <a href="index.html">Game Search</a>
+      <a href="images.html">Game Images</a>
+      <a href="formulare.html">Player loadout</a>
+    </nav>
+  </header>
+
+  <main class="advanced-main">
+    <h1>Advanced Game Search</h1>
+    <p class="advanced-intro">Tune your search with...</p>
+    <form action="https://www.google.com/search" method="get">
+      <div class="advanced-row">
+        <label for="all-words">all these words:</label>
+        <input id="all-words" type="text" name="as_q">
+      </div>
+      <div class="advanced-row">
+        <label for="exact-phrase">this exact word or phrase:</label>
+        <input id="exact-phrase" type="text" name="as_epq">
+      </div>
+      <div class="advanced-row">
+        <label for="any-words">any of these words:</label>
+        <input id="any-words" type="text" name="as_oq">
+      </div>
+      <div class="advanced-row">
+        <label for="none-words">none of these words:</label>
+        <input id="none-words" type="text" name="as_eq">
+      </div>
+      <div class="advanced-submit">
+        <button class="advanced-button" type="submit">Search games</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://validator.w3.org/nu/" data-validator="html">Validate HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/" data-validator="css">Validate CSS</a>
+      <a href="citace.md" data-citations>Citations and sources</a>
+      <a href="https://example.com/" data-portfolio>My portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>

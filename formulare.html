@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Herně laděná ukázka různých HTML formulářových prvků.">
+  <title>Player Loadout | Formulářové prvky</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="showcase-page">
+  <header class="topbar showcase-topbar">
+    <a class="small-wordmark" href="index.html">Google</a>
+    <nav class="top-links" aria-label="Hlavní navigace">
+      <a href="index.html">Game Search</a>
+      <a href="images.html">Game Images</a>
+      <a href="advanced.html">Advanced Search</a>
+    </nav>
+  </header>
+
+  <main class="showcase-main">
+    <h1>Player loadout</h1>
+    <p class="showcase-intro">Vyber si výbavu, nastav profil a prohlédni si různé typy formulářových prvků.</p>
+    <form class="demo-form" action="#" method="get">
+      <fieldset>
+        <legend>Player profile</legend>
+        <div class="demo-grid">
+          <label for="text">Text <input id="text" name="text" type="text" placeholder="Zadejte text"></label>
+          <label for="search">Vyhledávání <input id="search" name="search" type="search" placeholder="Hledat"></label>
+          <label for="email">E-mail <input id="email" name="email" type="email" placeholder="jmeno@example.cz"></label>
+          <label for="password">Heslo <input id="password" name="password" type="password" autocomplete="new-password"></label>
+          <label for="tel">Telefon <input id="tel" name="telephone" type="tel" placeholder="+420"></label>
+          <label for="url">Webová adresa <input id="url" name="website" type="url" placeholder="https://example.cz"></label>
+          <label for="number">Číslo <input id="number" name="number" type="number" min="0" max="100" value="10"></label>
+          <label for="datalist">Text s nabídkou
+            <input id="datalist" name="suggestion" list="suggestions" placeholder="Vyberte nebo napište">
+            <datalist id="suggestions">
+              <option value="Praha"></option>
+              <option value="Brno"></option>
+              <option value="Ostrava"></option>
+            </datalist>
+          </label>
+        </div>
+        <label for="textarea">Víceřádkový text
+          <textarea id="textarea" name="message" rows="4" placeholder="Napište zprávu..."></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Class &amp; play style</legend>
+        <label for="select">Rozbalovací nabídka
+          <select id="select" name="city">
+            <optgroup label="Čechy">
+              <option value="praha">Praha</option>
+              <option value="plzen">Plzeň</option>
+            </optgroup>
+            <optgroup label="Morava a Slezsko">
+              <option value="brno">Brno</option>
+              <option value="ostrava">Ostrava</option>
+            </optgroup>
+          </select>
+        </label>
+        <div class="choice-group">
+          <span class="group-label">Oblíbené roční období</span>
+          <label><input type="radio" name="season" value="spring"> Jaro</label>
+          <label><input type="radio" name="season" value="summer"> Léto</label>
+          <label><input type="radio" name="season" value="autumn"> Podzim</label>
+          <label><input type="radio" name="season" value="winter"> Zima</label>
+        </div>
+        <div class="choice-group">
+          <span class="group-label">Zájmy</span>
+          <label><input type="checkbox" name="interest" value="code"> Programování</label>
+          <label><input type="checkbox" name="interest" value="design"> Design</label>
+          <label><input type="checkbox" name="interest" value="travel"> Cestování</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Session settings</legend>
+        <div class="demo-grid">
+          <label for="date">Datum <input id="date" name="date" type="date"></label>
+          <label for="time">Čas <input id="time" name="time" type="time"></label>
+          <label for="datetime">Datum a čas <input id="datetime" name="datetime" type="datetime-local"></label>
+          <label for="month">Měsíc <input id="month" name="month" type="month"></label>
+          <label for="week">Týden <input id="week" name="week" type="week"></label>
+          <label for="color">Barva <input id="color" name="color" type="color" value="#4285f4"></label>
+          <label for="range">Rozsah <input id="range" name="range" type="range" min="0" max="10" value="5"></label>
+          <label for="file">Soubor <input id="file" name="file" type="file"></label>
+        </div>
+      </fieldset>
+
+      <div class="demo-actions">
+        <button class="button" type="button">Equip item</button>
+        <button class="button" type="reset">Reset loadout</button>
+        <button class="advanced-button" type="submit">Save player setup</button>
+      </div>
+      <output class="demo-output" for="range">Player setup demo — změny se nikam neukládají.</output>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://validator.w3.org/nu/" data-validator="html">Validovat HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/" data-validator="css">Validovat CSS</a>
+      <a href="citace.md" data-citations>Citace a zdroje</a>
+      <a href="https://example.com/" data-portfolio>Moje portfolio</a>
+    </div>
+  </footer>
+</body>
+</html>
