@@ -10,27 +10,23 @@
 </head>
 <body class="showcase-page">
   <header class="topbar showcase-topbar">
-    <a class="small-wordmark" href="index.html">Google</a>
+    <a class="small-wordmark" href="index.html">Ukázka formulářů</a>
     <nav class="top-links" aria-label="Hlavní navigace">
-      <a href="index.html">Game Search</a>
-      <a href="images.html">Game Images</a>
-      <a href="advanced.html">Advanced Search</a>
+      <a href="index.html">Hledání her</a>
+      <a href="images.html">Obrázky her</a>
+      <a href="advanced.html">Rozšířené hledání</a>
     </nav>
   </header>
 
   <main class="showcase-main">
-    <h1>Player loadout</h1>
-    <p class="showcase-intro">Vyber si výbavu, nastav profil a prohlédni si různé typy formulářových prvků.</p>
-    <form class="demo-form" action="#" method="get">
+    <h1>Ukázka formulářových prvků</h1>
+    <p class="showcase-intro">Interaktivní ukázka HTML prvků. Zadané hodnoty zůstávají pouze v tomto prohlížeči a nikam se neodesílají ani neukládají.</p>
+    <div class="demo-form" data-demo-form>
       <fieldset>
-        <legend>Player profile</legend>
+        <legend>Základní prvky</legend>
         <div class="demo-grid">
           <label for="text">Text <input id="text" name="text" type="text" placeholder="Zadejte text"></label>
           <label for="search">Vyhledávání <input id="search" name="search" type="search" placeholder="Hledat"></label>
-          <label for="email">E-mail <input id="email" name="email" type="email" placeholder="jmeno@example.cz"></label>
-          <label for="password">Heslo <input id="password" name="password" type="password" autocomplete="new-password"></label>
-          <label for="tel">Telefon <input id="tel" name="telephone" type="tel" placeholder="+420"></label>
-          <label for="url">Webová adresa <input id="url" name="website" type="url" placeholder="https://example.cz"></label>
           <label for="number">Číslo <input id="number" name="number" type="number" min="0" max="100" value="10"></label>
           <label for="datalist">Text s nabídkou
             <input id="datalist" name="suggestion" list="suggestions" placeholder="Vyberte nebo napište">
@@ -42,12 +38,12 @@
           </label>
         </div>
         <label for="textarea">Víceřádkový text
-          <textarea id="textarea" name="message" rows="4" placeholder="Napište zprávu..."></textarea>
+          <textarea id="textarea" name="message" rows="4" placeholder="Ukázkový text..."></textarea>
         </label>
       </fieldset>
 
       <fieldset>
-        <legend>Class &amp; play style</legend>
+        <legend>Výběr možností</legend>
         <label for="select">Rozbalovací nabídka
           <select id="select" name="city">
             <optgroup label="Čechy">
@@ -76,7 +72,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Session settings</legend>
+        <legend>Datum a další ovládací prvky</legend>
         <div class="demo-grid">
           <label for="date">Datum <input id="date" name="date" type="date"></label>
           <label for="time">Čas <input id="time" name="time" type="time"></label>
@@ -85,17 +81,15 @@
           <label for="week">Týden <input id="week" name="week" type="week"></label>
           <label for="color">Barva <input id="color" name="color" type="color" value="#4285f4"></label>
           <label for="range">Rozsah <input id="range" name="range" type="range" min="0" max="10" value="5"></label>
-          <label for="file">Soubor <input id="file" name="file" type="file"></label>
         </div>
       </fieldset>
 
       <div class="demo-actions">
-        <button class="button" type="button">Equip item</button>
-        <button class="button" type="reset">Reset loadout</button>
-        <button class="advanced-button" type="submit">Save player setup</button>
+        <button class="button" type="button" data-demo-action>Ukázková akce</button>
+        <button class="button" type="button" data-reset-demo>Obnovit výchozí hodnoty</button>
       </div>
-      <output class="demo-output" for="range">Player setup demo — změny se nikam neukládají.</output>
-    </form>
+      <output class="demo-output" for="range">Pouze ukázka — nic se neodesílá ani neukládá.</output>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -103,7 +97,7 @@
       <a href="https://validator.w3.org/nu/" data-validator="html">Validovat HTML</a>
       <a href="https://jigsaw.w3.org/css-validator/" data-validator="css">Validovat CSS</a>
       <a href="citace.md" data-citations>Citace a zdroje</a>
-      <a href="https://example.com/" data-portfolio>Moje portfolio</a>
+      <a href="https://sameul67.github.io/" data-portfolio>Moje portfolio</a>
     </div>
   </footer>
 </body>
